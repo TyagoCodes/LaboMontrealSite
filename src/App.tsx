@@ -8,7 +8,7 @@ function App() {
         {/* top nav bar*/}  {/* a faire en component*/}
         {/* NavBar trop grand arrive pas a faire plus petit.... pense que cest a cause de taille de mes images*/}
         {/* Trucs bizzarres blanc top left and right jsp pk a fix...*/}
-        <nav className="flex items-center justify-between  bg-neutral-800 text-white px-8  border-b">
+        <nav className="flex items-center justify-between  px-5  border-b">
             <ul className="flex items-center gap-4">
                 <li>
                     <a href="/">
@@ -25,7 +25,7 @@ function App() {
                 <li>
                     <a href="/search" className="flex items-center gap-2">
                         <img src="/searchIcon.png" alt="Search Icon" className="h-7" />
-                        <span>Search</span>
+                        <span className="hover: ">Search</span>
                     </a>
                 </li>
 
