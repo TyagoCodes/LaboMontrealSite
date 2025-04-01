@@ -24,7 +24,11 @@ function App() {
                 </div>
             </div>
             {/* filter part*/} {/* a faire en component*/}
-
+            <div className="px-10 py-2 border-b flex flex-row-3">
+                <button className="button-sec3-style" onClick={() => console.log("button 1 clicked")}>Borough</button>
+                <button className="button-sec3-style mx-4" onClick={() => console.log("button 2 clicked")}>Date</button>
+                <button className="button-sec3-style" onClick={() => console.log("button 3 clicked")}>Topic</button>
+            </div>
             {/* grid for news and newsletter */} {/* a faire en component*/}
             {/*  Footer  */}
         </>

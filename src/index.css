@@ -3,3 +3,26 @@
 body {
     @apply bg-neutral-800 text-white;
 }
+
+@layer components {
+    .button-sec3-style {
+        @apply
+        hover:underline
+        active:scale-110
+        transition
+        duration-150
+        ease-in-out
+        rounded-full
+        px-4
+        py-2
+        border
+        text-sm
+        font-semibold
+        flex
+        items-center
+        gap-2
+        border-cyan-600
+        bg-neutral-700
+        text-white;
+    }
+}
