@@ -50,7 +50,7 @@ function App() {
                 </div>
 
                 {/* grid for news and newsletter */} {/* a faire en component*/}
-                <div className="">
+                <div className="flex flex-row justify-between ">
 
                     <div className="">
                         <ul className="">
