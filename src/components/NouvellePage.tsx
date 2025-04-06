@@ -6,7 +6,7 @@ export default function NouvellePage() {
     const index = parseInt(id || '0');
     const article: Nouvelle | undefined = nouvelleList[index];
 
-    if (!article) return <p className="text-white p-5">Article not found</p>;
+    if (!article) return <div><p className="text-white p-17">Article not found <a href="/" className="mt-6 inline-block text-blue-400 underline">←</a></p></div>;
 
     return (
         <div className="p-5 text-white max-w-screen-md mx-auto">
