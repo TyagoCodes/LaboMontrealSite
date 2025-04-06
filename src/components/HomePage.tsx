@@ -46,6 +46,8 @@ function HomePage() {
                         </ul>
                     </div>
 
+
+                    {/*En mobile mode jaimerais envoyer le subscribe bouton en bas a la place de a droite */}
                     <div className="w-1/4 block max-w-screen-xl mx-auto max-h-60 rounded-lg shadow-sm bg-gray-800 p-6 ">
                         <div className="">
                             <h1>Subscribe to alerts</h1>
