@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import {Link, useParams } from 'react-router-dom';
 import {nouvelleList, Nouvelle} from "../data.ts";
 
 export default function NouvellePage() {
@@ -6,7 +6,8 @@ export default function NouvellePage() {
     const index = parseInt(id || '0');
     const article: Nouvelle | undefined = nouvelleList[index];
 
-    if (!article) return <div><p className="text-white p-17">Article not found <a href="/" className="mt-6 inline-block text-blue-400 underline">←</a></p></div>;
+    if (!article) return <div><p className="text-white p-17">Article not found <Link to="/" className="mt-6 inline-block text-blue-400 underline">←</Link>
+    </p></div>;
 
     return (
         <div className="p-5 text-white max-w-screen-md mx-auto">
@@ -22,7 +23,7 @@ export default function NouvellePage() {
                 }
             </ul>
             <p className="mt-4 italic text-neutral-300">{article.location}</p>
-            <a href="/" className="mt-6 inline-block text-blue-400 underline">←</a>
+            <Link to="/" className="mt-6 inline-block text-blue-400 underline">←</Link>
         </div>
     );
 }
