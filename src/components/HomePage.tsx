@@ -40,11 +40,12 @@ function HomePage() {
                                     <div className="flex flex-col gap-y-2">
                                         <h2 className="text-base font-semibold text-white leading-snug">
                                             {n.name}
+                                            <span className="ml-2 text-sm text-red-500">{n.borough}</span>
                                         </h2>
 
-                                        <div className="flex flex-col gap-y-1 text-sm text-neutral-300">
-                                            <span className="self-start border border-red-500 text-red-500 rounded-full px-3 py-0.5 text-xs font-medium">
-                                                {n.borough}
+                                        <div className="flex flex-col gap-y-2 text-sm text-neutral-300">
+                                            <span className="self-start border border-red-500 text-red-500 rounded-full px-3 py-.50 text-xs font-medium">
+                                                {n.topic}
                                             </span>
 
                                             <span>

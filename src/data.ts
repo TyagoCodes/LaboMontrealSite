@@ -1,6 +1,7 @@
 export type Nouvelle = {
     name: string,
     borough: string,
+    topic: string,
     date: string,
     text: string[],
     location: string,
@@ -8,16 +9,18 @@ export type Nouvelle = {
 
 export const nouvelleList: Nouvelle[] = [
     {
-        name: "Special schedule for Complexe Aquatique Rosemont, Rosemont-La Petite-Patrie",
+        name: "Special schedule for Complexe Aquatique",
         borough: "Rosemont",
+        topic: "Schedule",
         date: "Published April 4, 2025 - 5:13 pm",
         text: ["• The Complexe Aquatique de Rosemont, located at 6150 9e Avenue, will be closed starting at 7:00 p.m. on 04/04/2025 and 04/05/2025.","• Reason: Event Jeux de Montréal","• The regular schedule will resume on 04/06/2025."],
         location: "6150 9e Avenue, Montréal, QC H1Y 2K4"
     },
     {
-        name: "Water interruption notice – Plateau-Mont-Royal",
+        name: "Water interruption notice",
         date: "Published April 5, 2025 - 10:22 am",
         borough: "Plateau",
+        topic: "Urgence",
         text: [
             "• Water services will be temporarily suspended between 8:00 a.m. and 3:00 p.m. on 04/07/2025.",
             "• Affected streets include Rue Saint-Denis and Rue Rachel Est.",
@@ -26,9 +29,10 @@ export const nouvelleList: Nouvelle[] = [
         location: "Rue Saint-Denis & Rue Rachel Est, Montréal, QC"
     },
     {
-        name: "Garbage pickup delayed in Côte-des-Neiges–Notre-Dame-de-Grâce",
+        name: "Garbage pickup delayed",
         date: "Published April 6, 2025 - 8:45 am",
         borough: "CDN",
+        topic: "Urgence",
         text: [
             "• Garbage collection will be delayed by 24 hours due to mechanical issues.",
             "• Residents are asked to leave bins curbside until pickup is complete.",
@@ -37,9 +41,10 @@ export const nouvelleList: Nouvelle[] = [
         location: "Côte-des-Neiges–Notre-Dame-de-Grâce, Montréal, QC"
     },
     {
-        name: "Temporary park closure: Parc Jarry maintenance",
+        name: "Temporary park closure",
         date: "Published April 6, 2025 - 3:30 pm",
         borough: "Jarry",
+        topic: "Closure",
         text: [
             "• Parc Jarry will be closed for scheduled spring maintenance.",
             "• All walking paths and sports fields will be inaccessible.",
@@ -48,9 +53,10 @@ export const nouvelleList: Nouvelle[] = [
         location: "285 Rue Gary-Carter, Montréal, QC H2R 2W1"
     },
     {
-        name: "Emergency repairs: Saint-Laurent Metro Station elevator",
+        name: "Emergency repairs Metro Station elevator",
         date: "Published April 6, 2025 - 7:15 pm",
-        borough: "Saint-Laurent",
+        borough: "Rosemont",
+        topic: "Urgence",
         text: [
             "• The elevator at Saint-Laurent Station will be out of service until further notice.",
             "• Accessibility options available at nearby Berri-UQAM and Place-des-Arts stations.",
@@ -59,9 +65,10 @@ export const nouvelleList: Nouvelle[] = [
         location: "Saint-Laurent Metro Station, Montréal, QC"
     },
     {
-        name: "Street closure alert – Rue Sainte-Catherine Ouest",
+        name: "Street closure alert",
         date: "Published April 7, 2025 - 9:00 am",
-        borough: "DTOWN",
+        borough: "CDN",
+        topic: "Closure",
         text: [
             "• Rue Sainte-Catherine Ouest will be closed between Rue Guy and Rue Bishop.",
             "• Closure in effect from 9:00 a.m. to 8:00 p.m. daily for road resurfacing.",
