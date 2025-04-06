@@ -3,8 +3,9 @@ import {nouvelleList as initialList, Nouvelle} from "../data.ts";
 import {Link} from "react-router-dom";
 
 function HomePage() {
-    const [nouvelleList, setNouvelleList] = useState<Nouvelle[]>(initialList);
-    const [filteredList, setFilteredList] = useState<Nouvelle[]>(initialList);
+
+    const [nouvelleList, setNouvelleList] = useState<Nouvelle[]>();
+    const [filteredList, setFilteredList] = useState<Nouvelle[]>();
 
     return (
         <>
@@ -44,7 +45,7 @@ function HomePage() {
                                         </h2>
 
                                         <div className="flex flex-col gap-y-2 text-sm text-neutral-300">
-                                            <span className="self-start border border-red-500 text-red-500 rounded-full px-3 py-.50 text-xs font-medium">
+                                            <span className="self-start border border-red-400 text-red-400 rounded-full px-3 py-.50 text-xs font-medium">
                                                 {n.topic}
                                             </span>
 
