@@ -1,9 +1,7 @@
 function NavBar() {
+
     return (
         <>
-            {/* top nav bar*/}  {/* a faire en component*/}
-            {/* NavBar trop grand arrive pas a faire plus petit.... pense que cest a cause de taille de mes images*/}
-            {/* Trucs bizzarres blanc top left and right jsp pk a fix...*/}
             {/* Arrive pas a faire hover couleur images peut etre faut utiliser vecteurs et pas png. peut etre ca aussi fix mon probleeme de tailles*/}
             <nav className="flex items-center justify-between  px-2.5 pr-6 border-b">
                 <ul className="flex items-center gap-1">
