@@ -18,7 +18,7 @@ function NavBar() {
                     <li>
                         <Link to="/openmenuburger" className="flex items-center gap-2">
                             <img src="/menuBurg.png" alt="menu burg icon" className="h-7" />
-                            <span className="hover:text-emerald-400">Menu</span>
+                            <span className="hover:text-red-500">Menu</span>
                         </Link>
                     </li>
                 </ul>
@@ -27,7 +27,7 @@ function NavBar() {
                     <li>
                         <Link to="/search" className="flex items-center gap-2">
                             <img src="/searchIcon.png" alt="Search Icon" className="h-7" />
-                            <span className="hover:text-emerald-400">Search</span>
+                            <span className="hover:text-red-500">Search</span>
                         </Link>
                     </li>
 
@@ -36,7 +36,7 @@ function NavBar() {
                     <li>
                         <Link to="/logIn"  className="flex items-center gap-2">
                             <img src="/AccIcon.png" alt="Account Icon" className="h-5"></img>
-                            <span className="hover:text-emerald-400">Account</span>
+                            <span className="hover:text-red-500">Account</span>
                         </Link>
                     </li>
                 </ul>

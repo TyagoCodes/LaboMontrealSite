@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { nouvelleList as initialList, Nouvelle } from "../data.ts";
+import {useState} from "react";
+import {nouvelleList as initialList, Nouvelle} from "../data.ts";
 import {Link} from "react-router-dom";
 
 function HomePage() {
@@ -12,7 +12,8 @@ function HomePage() {
                 <div className="flex flex-col max-w-screen-xl mx-auto px-4 gap-y-5">
                     <h1 className="text-[26px] font-bold">Notices and Alerts</h1>
                     <h3 className="text-[15px]">Find a notice</h3>
-                    <div className="flex items-center border-double border-2 border-cyan-600 rounded-full px-3 py-2 w-full max-w-md bg-neutral-700">
+                    <div
+                        className="flex items-center border-double border-2 border-cyan-600 rounded-full px-3 py-2 w-full max-w-md bg-neutral-700">
                         <img src="/searchIcon.png" alt="Search" className="h-7 w-7 mr-3"/>
                         <input
                             className="w-full bg-transparent outline-none text-white placeholder-neutral-400"
@@ -34,12 +35,22 @@ function HomePage() {
                     <div className="w-3/4">
                         <ul className="p-2">
                             {initialList.map((n, i) => (
-                                <Link to={`/nouvelle/${i}`} className="block hover:bg-neutral-600 transition-colors p-4 max-w-full border-b-1">
+                                <Link to={`/nouvelle/${i}`}
+                                      className="block hover:bg-neutral-600 transition-colors p-4 max-w-full border-b border-neutral-700 rounded-md">
                                     <div className="flex flex-col gap-y-2">
                                         <h2 className="text-base font-semibold text-white leading-snug">
                                             {n.name}
                                         </h2>
-                                        <p className="text-sm text-neutral-300">{n.date}</p>
+
+                                        <div className="flex flex-col gap-y-1 text-sm text-neutral-300">
+                                            <span className="self-start border border-red-500 text-red-500 rounded-full px-3 py-0.5 text-xs font-medium">
+                                                {n.borough}
+                                            </span>
+
+                                            <span>
+                                                {n.date}
+                                            </span>
+                                        </div>
                                     </div>
                                 </Link>
                             ))}
@@ -51,11 +62,15 @@ function HomePage() {
                     <div className="w-1/4 block max-w-screen-xl mx-auto max-h-60 rounded-lg shadow-sm bg-gray-800 p-6 ">
                         <div className="flex flex-col max-w-screen-xl mx-auto px-4 gap-y-5">
                             <h1 className="text-xl text-amber-50 font-extrabold">Subscribe to alerts</h1>
-                            <p className="text-s">To receive notices and alerts by e-mail or text message, you must create an account.</p>
-                            <Link to="/subcriptionLink" className="inline-flex items-center px-3 py-2 text-sm font-bold text-white bg-blue-700 rounded-lg hover:bg-blue-800">
+                            <p className="text-s">To receive notices and alerts by e-mail or text message, you must
+                                create an account.</p>
+                            <Link to="/subcriptionLink"
+                                  className="inline-flex items-center px-3 py-2 text-sm font-bold text-white bg-blue-700 rounded-lg hover:bg-blue-800">
                                 Subscribe
-                                <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                                <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                     fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"
+                                          strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
                                 </svg>
                             </Link>
                         </div>

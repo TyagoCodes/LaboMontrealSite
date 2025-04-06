@@ -7,7 +7,7 @@ body {
 @layer components {
     .button-sec3-style {
         @apply
-        hover:text-emerald-400
+        hover:text-red-500
         active:scale-110
         transition
         duration-150
