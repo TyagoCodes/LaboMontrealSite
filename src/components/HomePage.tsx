@@ -30,7 +30,7 @@ function HomePage() {
                     <button className="button-sec3-style">Topic</button>
                 </div>
 
-                <div className="flex flex-row gap-6 mt-4">
+                <div className="flex flex-row gap-6 mt-1">
                     <div className="w-3/4">
                         <ul className="p-2">
                             {initialList.map((n, i) => (
