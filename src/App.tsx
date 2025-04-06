@@ -3,19 +3,22 @@ import NavBar from "./components/NavBar.tsx";
 import {useState} from "react";
 
 function App() {
+
     type nouvelle = {
-        id: number;
         name: string;
         text: string
     };
 
     const [nouvelleList, setNouvelleList] = useState<nouvelle[]>([
-        {id: 1, name: "Notice 1", text: "This is the first notice."},
-        {id: 2, name: "Notice 2", text: "This is the second notice."},
-        {id: 3, name: "Notice 3", text: "This is the third notice."},
-        {id: 4, name: "Notice 4", text: "This is the fourth notice."},
-        {id: 5, name: "Notice 5", text: "This is the fifth notice."}
+        {name: "Notice 1", text: "This is the first notice.This is the first notice.This is the first notice.This is the first notice.This is the first notice.This is the first notice.This is the first notice."},
+        {name: "Notice 2", text: "This is the first notice.This is the first notice.This is  notice.This is the first notice.This is the first notice."},
+        {name: "Notice 3", text: "This is the first notice.This is the first notice.This is the first notice.This is the first notice.This is the first notice.This is the first notice.This is the first notice."},
+        {name: "Notice 4", text: "This is the fourth notice."},
+        {name: "Notice 5", text: "This is the first notice.This is the first notice.This is the first notice.This is the first notice.This is the first notice.This is the first notice.This is the first notice."},
+        {name: "Notice 4", text: "This is the fourth notice."},
     ]);
+
+
 
     return (
         <>
@@ -56,9 +59,9 @@ function App() {
                         <ul className="">
                             {
                                 nouvelleList.map((n, i) =>
-                                    <li key={i} className="border-t border-neutral-600 p-4">
+                                    <li key={i} className="border-t border-neutral-600 p-5">
                                         <a href={`/nouvelle/${i}`}
-                                           className="block hover:bg-neutral-600 transition-colors rounded-lg p-4">
+                                           className="block hover:bg-neutral-600 transition-colors rounded-lg p-4 max-w-full">
                                             <div className="flex flex-col gap-y-2">
                                                 <h2 className="text-base font-semibold text-white leading-snug">
                                                     {n.name}
@@ -72,7 +75,7 @@ function App() {
                         </ul>
                     </div>
 
-                    <div className="block w-[350px] h-[150px]  rounded-lg shadow-sm bg-gray-800 p-6">
+                    <div className="block  max-w-screen-xl mx-auto max-h-40 rounded-lg shadow-sm bg-gray-800 p-6">
                         <h1>Subscribe to alerts</h1>
                         <p>To receive notices and alerts by e-mail or text message, you must create an account.</p>
                         <a href="/subcriptionLink"
@@ -92,7 +95,7 @@ function App() {
 
             {/*  Footer  */}
             <footer className="bg-neutral-700">
-                <div className="bg-gray-800 flex flex-col max-w-screen-xl mx-auto px-4">
+                <div className="bg-neutral-800 flex flex-col max-w-screen-xl mx-auto px-4">
                     <h1 className="text-[26px] font-bold">Footer</h1>
                     <h3 className="text-[15px]">TO DO</h3>
                     <h3 className="text-[15px]">TO DO 4rows, image separators, r1: flex-end? r2: 6cols r3: 4cols r4: pareil que comme jai fait pour navbar</h3>

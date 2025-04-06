@@ -6,7 +6,7 @@ function NavBar() {
             {/* Trucs bizzarres blanc top left and right jsp pk a fix...*/}
             {/* Arrive pas a faire hover couleur images peut etre faut utiliser vecteurs et pas png. peut etre ca aussi fix mon probleeme de tailles*/}
             <nav className="flex items-center justify-between  px-2.5 pr-6 border-b">
-                <ul className="flex items-center gap-4">
+                <ul className="flex items-center gap-1">
                     <li>
                         <a href="/">
                             <img src="/MontrealLogo.png" alt="Montreal Logo" className="h-26" />
@@ -15,7 +15,12 @@ function NavBar() {
 
                     <li><img src="/bgSep.png" alt="Separator" className="h-9" /></li>
 
-                    {/* Eventuellement menu burger ici */}
+                    <li>
+                        <a href="/openmenuburger" className="flex items-center gap-2">
+                            <img src="/menuBurg.png" alt="menu burg icon" className="h-7" />
+                            <span className="hover:text-emerald-400">Menu</span>
+                        </a>
+                    </li>
                 </ul>
 
                 <ul className="flex items-center gap-4">
