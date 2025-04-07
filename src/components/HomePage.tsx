@@ -160,14 +160,14 @@ function HomePage() {
                         type="date"
                         value={startDate}
                         onChange={(e) => handleDateChange(e.target.value, endDate)}
-                        className="px-2 py-1 border rounded text-sm"
+                        className="px-2 py-1 border rounded text-sm border-cyan-600 bg-neutral-700"
                     />
 
                     <input
                         type="date"
                         value={endDate}
                         onChange={(e) => handleDateChange(startDate, e.target.value)}
-                        className="px-2 py-1 border rounded text-sm"
+                        className="px-2 py-1 border rounded text-sm border-cyan-600 bg-neutral-700"
                     />
 
                     <button
