@@ -12,13 +12,13 @@ export const nouvelleList: Nouvelle[] = [
         name: "Special schedule for Complexe Aquatique",
         borough: "Rosemont",
         topic: "Schedule",
-        date: "Published April 4, 2025 - 5:13 pm",
+        date: "April 4, 2025",
         text: ["• The Complexe Aquatique de Rosemont, located at 6150 9e Avenue, will be closed starting at 7:00 p.m. on 04/04/2025 and 04/05/2025.","• Reason: Event Jeux de Montréal","• The regular schedule will resume on 04/06/2025."],
         location: "6150 9e Avenue, Montréal, QC H1Y 2K4"
     },
     {
         name: "Water interruption notice",
-        date: "Published April 5, 2025 - 10:22 am",
+        date: "April 5, 2025",
         borough: "Plateau",
         topic: "Urgence",
         text: [
@@ -30,7 +30,7 @@ export const nouvelleList: Nouvelle[] = [
     },
     {
         name: "Garbage pickup delayed",
-        date: "Published April 6, 2025 - 8:45 am",
+        date: "April 6, 2025",
         borough: "CDN",
         topic: "Urgence",
         text: [
@@ -42,7 +42,7 @@ export const nouvelleList: Nouvelle[] = [
     },
     {
         name: "Temporary park closure",
-        date: "Published April 6, 2025 - 3:30 pm",
+        date: "April 6, 2025",
         borough: "Jarry",
         topic: "Closure",
         text: [
@@ -54,7 +54,7 @@ export const nouvelleList: Nouvelle[] = [
     },
     {
         name: "Emergency repairs Metro Station elevator",
-        date: "Published April 6, 2025 - 7:15 pm",
+        date: "April 6, 2025",
         borough: "Rosemont",
         topic: "Urgence",
         text: [
@@ -66,7 +66,7 @@ export const nouvelleList: Nouvelle[] = [
     },
     {
         name: "Street closure alert",
-        date: "Published April 7, 2025 - 9:00 am",
+        date: "April 27, 2025",
         borough: "CDN",
         topic: "Closure",
         text: [
@@ -75,5 +75,37 @@ export const nouvelleList: Nouvelle[] = [
             "• Detours and traffic redirection signs will be in place."
         ],
         location: "Rue Sainte-Catherine Ouest, Montréal, QC"
+    },
+    {
+        name: "Special schedule for Complexe Aquatique",
+        borough: "Rosemont",
+        topic: "Schedule",
+        date: "April 19, 2025",
+        text: ["• The Complexe Aquatique de Rosemont, located at 6150 9e Avenue, will be closed starting at 7:00 p.m. on 04/04/2025 and 04/05/2025.","• Reason: Event Jeux de Montréal","• The regular schedule will resume on 04/06/2025."],
+        location: "6150 9e Avenue, Montréal, QC H1Y 2K4"
+    },
+    {
+        name: "Water interruption notice",
+        date: "April 13, 2025",
+        borough: "Plateau",
+        topic: "Urgence",
+        text: [
+            "• Water services will be temporarily suspended between 8:00 a.m. and 3:00 p.m. on 04/07/2025.",
+            "• Affected streets include Rue Saint-Denis and Rue Rachel Est.",
+            "• Bottled water distribution available at Laurier Park during the interruption."
+        ],
+        location: "Rue Saint-Denis & Rue Rachel Est, Montréal, QC"
+    },
+    {
+        name: "Garbage pickup delayed",
+        date: "April 17, 2025",
+        borough: "CDN",
+        topic: "Urgence",
+        text: [
+            "• Garbage collection will be delayed by 24 hours due to mechanical issues.",
+            "• Residents are asked to leave bins curbside until pickup is complete.",
+            "• Updates will be provided on the borough's website."
+        ],
+        location: "Côte-des-Neiges–Notre-Dame-de-Grâce, Montréal, QC"
     }
 ]
