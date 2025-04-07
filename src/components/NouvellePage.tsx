@@ -23,7 +23,7 @@ export default function NouvellePage() {
                 }
             </ul>
             <p className="mt-4 italic text-neutral-300">{article.location}</p>
-            <Link to="/" className="mt-6 inline-block text-blue-400 underline">←</Link>
+            <Link to="/" className="mt-6 inline-block text-neutral-300 text-3xl font-bold hover:text-red-600 transition">←</Link>
         </div>
     );
 }
