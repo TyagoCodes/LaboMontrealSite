@@ -9,15 +9,15 @@ function NavBar() {
                 <ul className="flex items-center gap-1">
                     <li>
                         <Link to="/">
-                            <img src="/MontrealLogo.png" alt="Montreal Logo" className="h-26" />
+                            <img src="/icons/MontrealLogo.png" alt="Montreal Logo" className="h-26" />
                         </Link>
                     </li>
 
-                    <li><img src="/bgSep.png" alt="Separator" className="h-9" /></li>
+                    <li><img src="/icons/bgSep.png" alt="Separator" className="h-9" /></li>
 
                     <li>
                         <Link to="/openmenuburger" className="flex items-center gap-2">
-                            <img src="/menuBurg.png" alt="menu burg icon" className="h-7" />
+                            <img src="/icons/menuBurg.png" alt="menu burg icon" className="h-7" />
                             <span className="hover:text-red-500">Menu</span>
                         </Link>
                     </li>
@@ -26,16 +26,16 @@ function NavBar() {
                 <ul className="flex items-center gap-4">
                     <li>
                         <Link to="/search" className="flex items-center gap-2">
-                            <img src="/searchIcon.png" alt="Search Icon" className="h-7" />
+                            <img src="/icons/searchIcon.png" alt="Search Icon" className="h-7" />
                             <span className="hover:text-red-500">Search</span>
                         </Link>
                     </li>
 
-                    <li><img src="/bgSep.png" alt="Image Separator" className="h-9"/></li>
+                    <li><img src="/icons/bgSep.png" alt="Image Separator" className="h-9"/></li>
 
                     <li>
                         <Link to="/logIn"  className="flex items-center gap-2">
-                            <img src="/AccIcon.png" alt="Account Icon" className="h-5"></img>
+                            <img src="/icons/AccIcon.png" alt="Account Icon" className="h-5"></img>
                             <span className="hover:text-red-500">Account</span>
                         </Link>
                     </li>
