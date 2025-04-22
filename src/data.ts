@@ -55,7 +55,7 @@ export const nouvelleList: Nouvelle[] = [
     {
         name: "Emergency repairs Metro Station elevator",
         date: "April 6, 2025",
-        borough: "Rosemont",
+        borough: "Ahuntsic",
         topic: "Urgence",
         text: [
             "• The elevator at Saint-Laurent Station will be out of service until further notice.",

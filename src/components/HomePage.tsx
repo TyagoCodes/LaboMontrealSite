@@ -2,7 +2,10 @@ import {useState} from "react";
 import {nouvelleList as initialList, Nouvelle} from "../data.ts";
 import {Link} from "react-router-dom";
 import * as React from "react";
-import dayjs from "dayjs";
+import dayjs from "dayjs"
+
+//ajouter validaiton date inferieure a superieure
+//importer une liste de boroughs vide car questcequi arrive si quelqun dun borough qui ne saffiche pas veut savoir
 
 function HomePage() {
     const [searchQuery, setSearchQuery] = useState('');
@@ -113,8 +116,7 @@ function HomePage() {
                     <div className="relative">
                         <button
                             onClick={() => setBoroughDropdownOpen(!boroughDropdownOpen)}
-                            className="button-sec3-style"
-                        >
+                            className="button-sec3-style">
                             Borough
                         </button>
                         {boroughDropdownOpen && (
@@ -190,7 +192,7 @@ function HomePage() {
                         <ul className="p-2">
                             {filteredList.map((n, i) => (
                                 <Link to={`/nouvelle/${i}`}
-                                      className="block hover:bg-neutral-600 transition-colors p-4 max-w-full border-b border-neutral-700 rounded-md">
+                                    className="block hover:bg-neutral-600 transition-colors p-4 max-w-full border-b border-neutral-700 rounded-md">
                                     <div className="flex flex-col gap-y-2">
                                         <h2 className="text-base font-semibold text-white leading-snug">
                                             {n.name}
