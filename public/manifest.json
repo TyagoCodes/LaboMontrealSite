@@ -3,7 +3,7 @@
   "short_name": "Alertes Montreal",
   "start_url": "/index.html",
   "display": "standalone",
-  "background_color": "#191919",
+  "background_color": "#ffffff",
   "theme_color": "#191919",
   "description": "Site pour afficher les alertes du site Montreal.",
   "icons": [
