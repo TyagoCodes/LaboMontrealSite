@@ -4,9 +4,6 @@ import {Link} from "react-router-dom";
 import * as React from "react";
 import dayjs from "dayjs"
 
-//ajouter validaiton date inferieure a superieure
-//importer une liste de boroughs vide car questcequi arrive si quelqun dun borough qui ne saffiche pas veut savoir
-
 function HomePage() {
     const [searchQuery, setSearchQuery] = useState('');
     const [selectedBoroughs, setSelectedBoroughs] = useState<string[]>([]);
@@ -16,6 +13,7 @@ function HomePage() {
     const [filteredList, setFilteredList] = useState<Nouvelle[]>(initialList);
     const [boroughDropdownOpen, setBoroughDropdownOpen] = useState(false);
     const [topicDropdownOpen, setTopicDropdownOpen] = useState(false);
+    const [dateError, setDateError] = useState('');
 
     const allBoroughs = Array.from(new Set(initialList.map(n => n.borough)));
     const allTopics = Array.from(new Set(initialList.map(n => n.topic)));
@@ -48,15 +46,23 @@ function HomePage() {
         }
 
         if (from && to) {
-            filtered = filtered.filter((item) => {
+            const start = dayjs(from);
+            const end = dayjs(to);
 
-                const itemDate = dayjs(item.date);
+            if (start.isAfter(end)) {
+                setDateError("Error!!: 'From' date is after 'To' date.");
+                return;
+            } else {
+                setDateError('');
 
-                return (
-                    itemDate.isAfter(dayjs(from).subtract(1, 'day')) &&
-                    itemDate.isBefore(dayjs(to).add(1, 'day'))
-                );
-            });
+                filtered = filtered.filter((item) => {
+                    const itemDate = dayjs(item.date);
+                    return (
+                        itemDate.isAfter(start.subtract(1, 'day')) &&
+                        itemDate.isBefore(end.add(1, 'day'))
+                    );
+                });
+            }
         }
 
         setFilteredList(filtered);
@@ -189,6 +195,12 @@ function HomePage() {
 
                 <div className="flex flex-row gap-6 mt-1">
                     <div className="w-3/4">
+                        <div>
+                            <h1 className="text-xl text-amber-50 font-extrabold">Notices</h1>
+                            {dateError && (
+                                <div className="text-red-500 text-sm">{dateError}</div>
+                            )}
+                        </div>
                         <ul className="p-2">
                             {filteredList.map((n, i) => (
                                 <Link to={`/nouvelle/${i}`}
