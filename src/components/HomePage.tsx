@@ -193,8 +193,8 @@ function HomePage() {
                     </button>
                 </div>
 
-                <div className="flex flex-row gap-6 mt-1">
-                    <div className="w-3/4">
+                <div className="flex flex-col md:flex-row gap-6 mt-1">
+                    <div className="w-full md:w-3/4">
                         <div>
                             <h1 className="text-xl text-amber-50 font-extrabold">Notices</h1>
                             {dateError && (
@@ -223,12 +223,12 @@ function HomePage() {
                         </ul>
                     </div>
 
-                    <div className="w-1/4 block max-w-screen-xl mx-auto max-h-60 rounded-lg shadow-sm bg-gray-800 p-6 ">
+                    <div className="w-full md:w-1/4 max-h-60 rounded-lg shadow-sm bg-gray-800 p-6">
                         <div className="flex flex-col max-w-screen-xl mx-auto px-4 gap-y-5">
                             <h1 className="text-xl text-amber-50 font-extrabold">Subscribe to alerts</h1>
                             <p className="text-s">To receive notices and alerts by e-mail or text message, you must
                                 create an account.</p>
-                            <Link to="/subcriptionLink"
+                            <Link to="/subscriptionPage/"
                                   className="inline-flex items-center px-3 py-2 text-sm font-bold text-white bg-blue-700 rounded-lg hover:bg-blue-800">
                                 Subscribe
                                 <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
