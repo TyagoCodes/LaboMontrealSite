@@ -4,6 +4,9 @@ import {Link} from "react-router-dom";
 import * as React from "react";
 import dayjs from "dayjs"
 
+
+//!!! ajouter donnees api a la homepage a la place de la homemade list
+
 function HomePage() {
     const [searchQuery, setSearchQuery] = useState('');
     const [selectedBoroughs, setSelectedBoroughs] = useState<string[]>([]);
