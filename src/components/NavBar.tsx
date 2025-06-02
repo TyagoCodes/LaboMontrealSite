@@ -4,7 +4,6 @@ function NavBar() {
 
     return (
         <>
-            {/* Arrive pas a faire hover couleur images peut etre faut utiliser vecteurs et pas png comme fait avec la fleche dans subscribe. peut etre ca aussi fix mon probleeme de tailles*/}
             <nav className="flex flex-col items-center justify-between  px-2.5 pr-6 border-b md:flex-row gap-6 mt-1">
                 <ul className="flex items-center gap-1">
                     <li>
